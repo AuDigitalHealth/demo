@@ -1,0 +1,25 @@
+.footer-bottom {
+	border-top: 1px solid #93a2bf;
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	color: white;
+}
+
+.au-link-list {
+	font-size: 1rem;
+	line-height: 1.5;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0.25rem 0;
+
+	li {
+		display: inline-block;
+		margin: 0.25rem;
+	}
+
+	li:nth-child(2n) {
+		color: white;
+	}
+}

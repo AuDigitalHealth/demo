@@ -1,0 +1,382 @@
+@import 'variables';
+
+.pca-section-header {
+	display: block;
+	font-size: 1.17em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #68a;
+}
+
+.pca-section-subheader {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	color: #444;
+}
+
+.pca-label {
+	font-size: 1em;
+	font-weight: bold;
+	color: #444;
+}
+
+.pca-checkbox-indent {
+	margin-left: 25px;
+}
+
+.pca-section-content {
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.pca-flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.pca-flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.pca-flex-align-center {
+	margin-top: 12px;
+}
+
+.pca-100pc {
+	width: 100%;
+}
+
+.pca-90pc {
+	width: 90%;
+}
+
+.pca-98pc {
+	width: 98%;
+}
+
+.pca-80pc {
+	width: 80%;
+}
+
+.pca-60pc {
+	width: 60%;
+}
+
+.pca-50pc {
+	width: 50%;
+}
+
+.pca-40pc {
+	width: 40%;
+}
+
+.pca-45pc {
+	width: 45%;
+}
+
+.pca-gap-30 {
+	gap: 30px;
+}
+
+.pca-gap-15 {
+	gap: 15px;
+}
+
+.pca-flex-1 {
+	flex: 1;
+}
+
+.pca-flex-2 {
+	flex: 2;
+}
+
+.pca-flex-3 {
+	flex: 3;
+}
+
+.pca-flex-4 {
+	flex: 4;
+}
+
+.pca-flex-5 {
+	flex: 5;
+}
+
+.pca-flex-6 {
+	flex: 6;
+}
+
+.pca-mb-5 {
+	margin-bottom: 5px;
+}
+
+.pca-mb-15 {
+	margin-bottom: 15px;
+}
+
+.pca-mb-30 {
+	margin-bottom: 30px;
+}
+
+.pca-mb-20 {
+	margin-bottom: 20px;
+}
+
+.pca-mb-10 {
+	margin-bottom: 10px;
+}
+
+.pca-mt-5 {
+	margin-top: 5px;
+}
+
+.pca-mt-10 {
+	margin-top: 10px;
+}
+
+.pca-mt-15 {
+	margin-top: 15px;
+}
+
+.pca-mt-20 {
+	margin-top: 20px;
+}
+
+.pca-mt-25 {
+	margin-top: 25px;
+}
+
+.pca-mt-30 {
+	margin-top: 30px;
+}
+
+.pca-mr-5 {
+	margin-right: 5px;
+}
+
+.pca-mr-10 {
+	margin-right: 10px;
+}
+
+.pca-mr-15 {
+	margin-right: 15px;
+}
+
+.pca-mr-20 {
+	margin-right: 20px;
+}
+
+.pca-mr-30 {
+	margin-right: 30px;
+}
+
+.pca-mr-45 {
+	margin-right: 45px;
+}
+
+.pca-ml-5 {
+	margin-right: 5px;
+}
+
+.pca-ml-10 {
+	margin-right: 10px;
+}
+
+.pca-ml-15 {
+	margin-right: 15px;
+}
+
+.pca-ml-20 {
+	margin-right: 20px;
+}
+
+.pca-ml-30 {
+	margin-right: 30px;
+}
+
+.pca-ml-45 {
+	margin-right: 45px;
+}
+
+.pca-pr-15 {
+	padding-right: 15px;
+}
+
+.pca-pl-0 {
+	padding-left: 0;
+}
+
+.pca-pl-10 {
+	padding-left: 10px;
+}
+
+.pca-header-sticky-container {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: $pca-background-colour;
+	.pca-header {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.pca-header-initial-ball {
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin-right: 10px;
+	background-color: #d2d9e7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	span {
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.pca-tab-header {
+	margin-top: 0;
+}
+
+.pca-bread-container {
+	background-color: white;
+	border-bottom: 1px solid #dddddd;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10px;
+}
+
+.pca-footer-container {
+	// margin-top: 50px;
+	background-color: $pca-background-colour;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.pca-footer-link-list {
+	padding: 0;
+	margin: 0;
+	li {
+		display: inline;
+		margin-right: 20px;
+	}
+}
+
+.pca-item-list {
+	li {
+		padding-bottom: 10px;
+	}
+}
+
+.pca-body-content-container {
+	margin-top: 20px;
+}
+
+.pca-divider {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.pca-org-actions-container {
+	button {
+		margin-left: 10px;
+	}
+}
+
+.pca-page-heading {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	// padding-bottom: 0px;
+	font-weight: 400;
+}
+
+.pca-form-heading {
+	margin-top: 20px;
+	font-weight: 400;
+	border-bottom: 1px solid gainsboro;
+	padding-bottom: 10px;
+}
+
+.pca-dark-link {
+	color: #61daff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pca-notification-snack {
+	background: cornsilk;
+	color: black;
+}
+
+.pca-error-snack {
+	// background: #ffd7c7;
+	background: cornsilk;
+	color: black;
+}
+
+.pca-loader-button {
+	margin-top: 5px;
+}
+
+.pca-entity-type-icon {
+	vertical-align: middle;
+	transform: scale(0.9);
+	color: #666;
+}
+
+.pca-entity-type-label {
+	vertical-align: middle;
+	font-style: italic;
+	color: #666;
+}
+
+.pca-icon-ball {
+	// line-height: 26px;
+	width: 22px;
+	height: 22px;
+	border-radius: 13px;
+	margin-right: 5px;
+	background-color: #666;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-family: Roboto;
+	span {
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+	}
+	font-weight: 500;
+}
+
+.pca-expansion-content {
+	font-family: inherit;
+	font-size: 16px;
+	padding: 20px 24px;
+}
+
+.pca-chip-label {
+	padding-top: 4px;
+}
+
+.pca-summary-card {
+	padding: 25px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.pca-empty-list-message {
+	margin-top: 1em;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+	opacity: 0.9;
+}

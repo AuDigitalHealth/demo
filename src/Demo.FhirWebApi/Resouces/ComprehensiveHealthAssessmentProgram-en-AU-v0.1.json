@@ -1,0 +1,4266 @@
+{
+	"resourceType": "Questionnaire",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2024-03-21T01:22:20.2265443+00:00",
+		"profile": [
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp",
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"
+		]
+	},
+	"language": "en-AU",
+	"extension": [
+		{
+			"extension": [
+				{
+					"url": "name",
+					"valueCoding": {
+						"system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+						"code": "patient"
+					}
+				},
+				{
+					"url": "type",
+					"valueCode": "Patient"
+				},
+				{
+					"url": "description",
+					"valueString": "The patient that is to be used to pre-populate the form"
+				}
+			],
+			"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+		},
+		{
+			"extension": [
+				{
+					"url": "name",
+					"valueCoding": {
+						"system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+						"code": "user"
+					}
+				},
+				{
+					"url": "type",
+					"valueCode": "Practitioner"
+				},
+				{
+					"url": "description",
+					"valueString": "The practitioner user that is to be used to pre-populate the form"
+				}
+			],
+			"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+		},
+		{
+			"extension": [
+				{
+					"url": "name",
+					"valueCoding": {
+						"system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+						"code": "encounter"
+					}
+				},
+				{
+					"url": "type",
+					"valueCode": "Encounter"
+				},
+				{
+					"url": "description",
+					"valueString": "The encounter that is to be used to pre-populate the form"
+				}
+			],
+			"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+		}
+	],
+	"url": "https://digitalhealth.gov.au/ig/Questionnaire/ComprehensiveHealthAssessmentProgram",
+	"version": "0.1",
+	"name": "ComprehensiveHealthAssessmentProgram",
+	"title": "CHAP",
+	"status": "draft",
+	"experimental": true,
+	"subjectType": [
+		"Patient"
+	],
+	"date": "2024-02-01",
+	"publisher": "ADHA",
+	"contact": [
+		{
+			"name": "https://www.digitalhealth.gov.au/"
+		}
+	],
+	"description": "Annual Health Assessment for People with Intellectual Disability.",
+	"jurisdiction": [
+		{
+			"coding": [
+				{
+					"system": "urn:iso:std:iso:3166",
+					"code": "AU"
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/questionnaire-item-control",
+								"version": "1.0.0",
+								"code": "tab-container"
+							}
+						]
+					}
+				}
+			],
+			"linkId": "tab-container",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "group-title",
+					"text": "Annual Health Assessment for People with Intellectual Disability",
+					"_text": {
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+								"valueMarkdown": "## Annual Health Assessment for People with Intellectual Disability"
+							}
+						]
+					},
+					"type": "group",
+					"item": [
+						{
+							"linkId": "group-summary",
+							"text": "Part 2 – For the General Practitioner Review the history provided in the Part 1 of the CHAPs document. Common health deficits for people with intellectual disability include: • unrecognised pain or infections • poor dental care • over-use and inadequate review of anti-psychotics/anti-convulsants • unrecognised mental disorder/s, poor psychiatric assessment / management • inadequate epilepsy assessment / management • unrecognised / poorly managed constipation • unrecognised / poorly managed dysphagia and aspiration • unrecognised reflux esophagitis / H.pylori infection • unrecognised or poorly managed hearing and vision impairment +/- pathology • incomplete immunisation schedules • incomplete health screens – BP, skin, breast, cervical • unrecognised osteoporosis and Vitamin D deficiency • unrecognised or poorly managed obesity / malnutrition • undescended testes/ hypogonadism • inadequate information about menstrual management • inadequate information about human relations and sexuality • uninvestigated cause of intellectual disability. The Medicare Benefits Schedule items for Health Assessments provided for people with an intellectual disability are: • 701 (brief) • 703 (standard) • 705 (long) or • 707 (prolonged) A health assessment for people with an intellectual disability may be claimed once every twelve months by an eligible patient. The Chronic Disease Care Management items are: • GP Management Plan (item 721) • Team Care Arrangements (item 723) Please perform a COMPREHENSIVE REVIEW of your patient’s health: • full physical examination • screening areas often neglected • other tests you feel are indicated, for example, a urine analysis. Please record your findings on the following pages. The last page of this book has syndrome specific information for you to keep. Using this Comprehensive Health Assessment Program (CHAP) can improve the health of a person with intellectual disability. Several randomised controlled trials and observational studies have demonstrated its beneficial effect to detect new disease, enhance health screening and promotion. This information is updated on an annual basis in line with current evidence and national and international guidelines.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "### Part 2 – For the General Practitioner\n\n**Review the history provided in the Part 1 of the CHAPs document.**  \n**Common health deficits for people with intellectual disability include:**  \n• unrecognised pain or infections  \n• poor dental care  \n• over-use and inadequate review of anti-psychotics/anti-convulsants  \n• unrecognised mental disorder/s, poor psychiatric assessment / management  \n• inadequate epilepsy assessment / management  \n• unrecognised / poorly managed constipation  \n• unrecognised / poorly managed dysphagia and aspiration  \n• unrecognised reflux esophagitis / H.pylori infection  \n• unrecognised or poorly managed hearing and vision impairment +/- pathology  \n• incomplete immunisation schedules  \n• incomplete health screens – BP, skin, breast, cervical  \n• unrecognised osteoporosis and Vitamin D deficiency  \n• unrecognised or poorly managed obesity / malnutrition  \n• undescended testes/ hypogonadism  \n• inadequate information about menstrual management  \n• inadequate information about human relations and sexuality  \n• uninvestigated cause of intellectual disability.  \n**The Medicare Benefits Schedule items for Health Assessments provided for people with an intellectual disability are:**  \n• 701 (brief)  \n• 703 (standard)  \n• 705 (long) or  \n• 707 (prolonged)  \nA health assessment for people with an intellectual disability may be claimed once every twelve months by an eligible patient.  \n**The Chronic Disease Care Management items are:**  \n• GP Management Plan (item 721)  \n• Team Care Arrangements (item 723)  \n**Please perform a COMPREHENSIVE REVIEW of your patient’s health:**  \n• full physical examination  \n• screening areas often neglected  \n• other tests you feel are indicated, for example, a urine analysis.  \n**Please record your findings on the following pages.**  \n_The last page of this book has syndrome specific information for you to keep._  \n\nUsing this Comprehensive Health Assessment Program (CHAP) can improve the health of a person with intellectual disability. Several randomised controlled trials and observational studies have demonstrated its beneficial effect to detect new disease, enhance health screening and promotion. This information is updated on an annual basis in line with current evidence and national and international guidelines."
+									}
+								]
+							},
+							"type": "display",
+							"required": false
+						}
+					]
+				},
+				{
+					"linkId": "group-visit",
+					"text": "0. Visit",
+					"type": "group",
+					"item": [
+						{
+							"linkId": "group-visit-1",
+							"text": "Patient",
+							"type": "group",
+							"item": [
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%patient.identifier.where(type.coding.exists(system=''http://terminology.hl7.org/CodeSystem/v2-0203'' and code=''MR'')).value"
+											}
+										}
+									],
+									"linkId": "group-visit-1-1",
+									"text": "MRN",
+									"type": "string",
+									"required": false
+								},
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%patient.name.where(use=''official'').select(given[0])"
+											}
+										}
+									],
+									"linkId": "group-visit-1-2",
+									"text": "Given name",
+									"type": "string",
+									"required": true
+								},
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%patient.name.where(use=''official'').select(family)"
+											}
+										}
+									],
+									"linkId": "group-visit-1-3",
+									"text": "Family Name",
+									"type": "string",
+									"required": true
+								},
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%patient.birthDate"
+											}
+										}
+									],
+									"linkId": "group-visit-1-4",
+									"text": "Date of Birth",
+									"type": "date",
+									"required": true
+								},
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%patient.gender"
+											}
+										}
+									],
+									"linkId": "group-visit-1-5-gender",
+									"text": "Administrative gender",
+									"type": "choice",
+									"required": true,
+									"answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+								}
+							]
+						},
+						{
+							"linkId": "group-visit-2",
+							"text": "Practitioner",
+							"type": "group",
+							"item": [
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%user.name.where(use=''official'').select(given[0])"
+											}
+										}
+									],
+									"linkId": "group-visit-2-1",
+									"text": "Given name",
+									"type": "string"
+								},
+								{
+									"extension": [
+										{
+											"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+											"valueExpression": {
+												"language": "text/fhirpath",
+												"expression": "%user.name.where(use=''official'').select(family)"
+											}
+										}
+									],
+									"linkId": "group-visit-2-2",
+									"text": "Family name",
+									"type": "string"
+								}
+							]
+						},
+						{
+							"linkId": "group-visit-3",
+							"text": "Encounter",
+							"type": "group",
+							"item": [
+								{
+									"linkId": "group-visit-3-1",
+									"text": "Date of Visit",
+									"type": "date",
+									"required": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "group-1-check",
+					"text": "1. Check",
+					"type": "group",
+					"item": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-1-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-1-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-1-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-1-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 300
+								}
+							],
+							"linkId": "group-1-check-1",
+							"text": "Height (cm)",
+							"type": "decimal"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 500
+								}
+							],
+							"linkId": "group-1-check-2",
+							"text": "Weight (kg)",
+							"type": "decimal"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 500
+								}
+							],
+							"linkId": "group-1-check-3",
+							"text": "Blood Pressure (mmHg)",
+							"type": "integer"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 500
+								}
+							],
+							"linkId": "group-1-check-4",
+							"text": "Pulse Rate (BPM)",
+							"type": "integer"
+						},
+						{
+							"linkId": "group-1-check-5",
+							"text": "If the person has a weight / blood pressure problem, please specify action recommended or taken:",
+							"type": "display"
+						},
+						{
+							"linkId": "group-1-check-6",
+							"text": "Weight control",
+							"type": "string"
+						},
+						{
+							"linkId": "group-1-check-7",
+							"text": "Hypertension",
+							"type": "string"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-1-check-8",
+							"text": "Is waist measurement necessary?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-1-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-2-system",
+					"text": "2. Systems check",
+					"type": "group",
+					"item": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-2-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-2-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-2-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-2-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-2-system-1",
+							"text": "Please perform a complete comprehensive physical examination",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Please perform a complete comprehensive physical examination_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-2-system-2",
+							"text": "New findings",
+							"type": "display"
+						},
+						{
+							"linkId": "group-2-system-3",
+							"text": "Cardiovascular",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-4",
+							"text": "Respiratory",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-5",
+							"text": "Musculo-skeletal",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-6",
+							"text": "Renal / urogenital",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-7",
+							"text": "Endocrine",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-8",
+							"text": "Gastrointestinal",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-9",
+							"text": "Nervous",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-10",
+							"text": "Psychiatric/Behavioural",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-system-11",
+							"text": "Skin",
+							"type": "text"
+						},
+						{
+							"linkId": "group-2-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}						
+					]
+				},
+				{
+					"linkId": "group-3-mental",
+					"text": "3. Mental health",
+					"type": "group",
+					"item": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-3-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-3-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-3-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-3-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-3-mental-1",
+							"text": "People with intellectual disability have very high rates of mental ill health which is often unrecognised.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_People with intellectual disability have very high rates of mental ill health which is often unrecognised._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-3-mental-2",
+							"text": "Is there any evidence of a comorbid psychiatric disorder?",
+							"type": "text"
+						},
+						{
+							"linkId": "group-3-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-4-epilepsy",
+					"text": "4. Epilepsy",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-4-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-4-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-4-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-4-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-4-1",
+							"text": "If present",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_If present_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-4-2",
+							"text": "Has the person’s seizure control been reviewed?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-4-3",
+							"text": "Does the person have an epilepsy management plan?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-4-4",
+							"text": "Has the risk of SUDEP been minimised?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-4-5",
+							"text": "Has a referral been considered?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-4-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-5-vision",
+					"text": "5. Vision test",
+					"type": "group",
+					"item": [
+					{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-5-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-5-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-5-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-5-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},	
+
+						{
+							"linkId": "group-5-1",
+							"text": "For those who cannot name letters, please use the last page to aid testing",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_For those who cannot name letters, please use the last page to aid testing_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-5-2",
+							"text": "Has the person’s vision been tested?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-5-3",
+							"text": "Test result",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Test result"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-5-4",
+							"text": "Both eyes",
+							"type": "string"
+						},
+						{
+							"linkId": "group-5-5",
+							"text": "Right",
+							"type": "string"
+						},
+						{
+							"linkId": "group-5-6",
+							"text": "Left",
+							"type": "string"
+						},
+						{
+							"linkId": "group-5-7",
+							"text": "Unable to test",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-5-8",
+							"text": "Uncertain",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-5-9",
+							"text": "If abnormal, unable to test or uncertain, consider referral.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_If abnormal, unable to test or uncertain, consider referral._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-5-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-6-hearing",
+					"text": "6. Hearing test",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-6-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-6-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-6-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-6-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-6-1",
+							"text": "Appropriate hearing test: Whisper test both sides at 0.6 metre & tympanometry",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Appropriate hearing test: Whisper test both sides at 0.6 metre & tympanometry_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-6-2",
+							"text": "Has a hearing test been performed?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-6-3",
+							"text": "Right ear",
+							"type": "string"
+						},
+						{
+							"linkId": "group-6-4",
+							"text": "Left ear",
+							"type": "string"
+						},
+						{
+							"linkId": "group-6-5",
+							"text": "Unable to test",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-6-6",
+							"text": "Uncertain",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-6-7",
+							"text": "If abnormal, unable to test or uncertain, consider referral.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_If abnormal, unable to test or uncertain, consider referral._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-6-8",
+							"text": "Has an otoscopy been performed?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-6-9",
+							"text": "If hearing test or otoscopy abnormal, unable to test or uncertain, consider referral.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_If hearing test or otoscopy abnormal, unable to test or uncertain, consider referral._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-6-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-7-aetiology",
+					"text": "7. Aetiology",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-7-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-7-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-7-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-7-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-7-1",
+							"text": "If there is no definitive diagnosis and the tests below have not been performed",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_If there is no definitive diagnosis and the tests below have not been performed_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-7-2",
+							"text": "First Recommend a CGH Microarray (Medicare indication: Intellectual disability",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-7-3",
+							"text": "Then Recommend testing for Fragile X, a urinary and plasma metabolic screen",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-7-4",
+							"text": "And if no results, consider referring to a genetics clinics",
+							"type": "boolean"
+						},
+						{
+							"linkId": "group-7-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-8-sleep",
+					"text": "8. Sleep",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-8-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-8-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-8-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-8-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-8-1",
+							"text": "Does the person have sleep apnoea or sleep problems?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-8-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-9-women",
+					"text": "9. Health of women and people with a cervix",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "group-visit-1-5-gender",
+							"operator": "=",
+							"answerCoding": {
+								"code": "female"
+							}
+						},
+						{
+							"question": "group-visit-1-5-gender",
+							"operator": "exists",
+							"answerBoolean": true
+						}
+					],
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-9-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-9-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-9-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-9-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-9-1",
+							"text": "Was a breast examination undertaken?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-9-2",
+							"text": "Is a mammogram required?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-9-3",
+							"text": "Was cervical screening undertaken/organised for the future (e.g. Supporting vaginal swab for HPV)?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-9-4",
+							"text": "If the person has symptoms which could be suspicious for cervical cancer a co-test rather than a screening test should be ordered alongside other investigations as appropriate.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_If the person has symptoms which could be suspicious for cervical cancer a co-test rather than a screening test should be ordered alongside other investigations as appropriate._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-9-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-10-men",
+					"text": "10. Health of men and people with a penis",
+					"type": "group",
+					"enableWhen": [
+						{
+							"question": "group-visit-1-5-gender",
+							"operator": "=",
+							"answerCoding": {
+								"code": "female"
+							}
+						},
+						{
+							"question": "group-visit-1-5-gender",
+							"operator": "exists",
+							"answerBoolean": true
+						}
+					],
+					"item": [
+					{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-10-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-10-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-10-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-10-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-10-1",
+							"text": "Was the person checked for undescended testicles?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-10-2",
+							"text": "Does this person need prostate screening?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-10-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-11-sexual",
+					"text": "11. Sexual and reproductive health",
+					"type": "group",
+					"item": [
+					{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-11-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-11-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-11-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-11-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},
+						{
+							"linkId": "group-11-1",
+							"text": "Recommend a review of their reproductive health, sexual activity and sexual development.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Recommend a review of their reproductive health, sexual activity and sexual development._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-11-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-12-abuse",
+					"text": "12. Abuse and Trauma",
+					"type": "group",
+					"item": [
+					{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-12-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-12-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-12-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-12-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},
+						{
+							"linkId": "group-12-1",
+							"text": "Check for signs of physical, psychological or sexual abuse and trauma.",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Check for signs of physical, psychological or sexual abuse and trauma._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-12-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-13-dental",
+					"text": "13. Dental Health",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-13-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-13-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-13-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-13-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-13-1",
+							"text": "Has the person been reviewed by a dentist in the last six months?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-13-2",
+							"text": "Is there obvious dental pathology?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-13-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-14-git",
+					"text": "14. GIT and bladder function",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-14-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-14-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-14-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-14-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-14-1",
+							"text": "Especially for people with cerebral palsy",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Especially for people with cerebral palsy_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-14-2",
+							"text": "Has the person been assessed for dysphagia?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-14-3",
+							"text": "Has the person been assessed for gastro-oesophageal disease?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-14-4",
+							"text": "Does the person experience urinary or bowel incontinence?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-14-5",
+							"text": "Does the person have chronic constipation?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-14-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-15-activity",
+					"text": "15. Activity and lifestyle",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-15-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-15-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-15-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-15-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-15-1",
+							"text": "Inactivity and poor diet can lead to significant health problems and depression",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Inactivity and poor diet can lead to significant health problems and depression_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-15-2",
+							"text": "Does the person have sufficient exercise?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Does the person have sufficient **exercise**?"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-15-3",
+							"text": "Does the person have any diet problems / abnormal eating behaviours?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Does the person have any diet **problems** / **abnormal eating behaviours**?"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-15-4",
+							"text": "Is a referral needed for any of these?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-15-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-16-health",
+					"text": "16. Health promotion and screening",
+					"type": "group",
+					"item": [
+					{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-16-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-16-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-16-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-16-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-16-1",
+							"text": "Blood glucose tested?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-16-2",
+							"text": "Lipid Screen tested?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-16-3",
+							"text": "Thyroid function tested? Especially in people with Down syndrome",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Thyroid function tested?  \n_Especially in people with Down syndrome_"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-16-4",
+							"text": "Colorectal cancer assessment? Same risk factors as general population",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Colorectal cancer assessment?  \n_Same risk factors as general population_"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-16-5",
+							"text": "Osteoporosis risk assessed?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-16-6",
+							"text": "Vitamin D deficiency, poor diet, lack of exercise, hypogonadism and medication (including anti-psychotics _& anti-convulsants) issues all appear to be common in some people with intellectual disability._",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Vitamin D deficiency, poor diet, lack of exercise, hypogonadism and medication (including anti-psychotics_  \n_& anti-convulsants) issues all appear to be common in some people with intellectual disability._"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-16-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-17-immunisations",
+					"text": "17. Immunisations",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-17-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-17-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-17-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-17-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-17-1",
+							"text": "Are the following immunisations indicated?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Are the following immunisations indicated?_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-2",
+							"text": "COVID-19",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-3",
+							"text": "Tetanus, diphtheria & pertussis (dTpa)",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-4",
+							"text": "Hepatitis A",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-5",
+							"text": "Hepatitis B",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-6",
+							"text": "Pneumococcus",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-7",
+							"text": "Meningococcal",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-8",
+							"text": "Measles, Mumps & Rubella",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-9",
+							"text": "HPV cervical cancer",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-17-10",
+							"text": "Herpes Zoster",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-17-11",
+							"text": "Influenza, Pneumococcus and Meningococcal immunisation may be indicated for people with intellectual and _developmental disability. For more details, please refer to The Australian Immunisation Handbook:_ https://immunisationhandbook.health.gov.au/",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Influenza, Pneumococcus and Meningococcal immunisation may be indicated for people with intellectual and_  \n_developmental disability. For more details, please refer to The Australian Immunisation Handbook:_\n\n[_https://immunisationhandbook.health.gov.au/_](https://immunisationhandbook.health.gov.au/)"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"linkId": "group-17-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-18-medication",
+					"text": "18. Medication review",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-18-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-18-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-18-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-18-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"linkId": "group-18-1",
+							"text": "Including prescription and non-prescription medications",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "_Including prescription and non-prescription medications_"
+									}
+								]
+							},
+							"type": "display"
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-18-2",
+							"text": "Have the person’s medications been reviewed?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-18-3",
+							"text": "Have you communicated indications, side effects and interactions?",
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-18-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-19-future",
+					"text": "19. Future planning",
+					"type": "group",
+					"item": [
+{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-19-in-progress",
+							"text": "In progress",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"In progress\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiM3NTc1NzUiIGQ9Im0xNS44NCAxMC4ybC0xLjAxIDEuMDFsLTIuMDctMi4wM2wxLjAxLTEuMDJjLjItLjIxLjU0LS4yMi43OCAwbDEuMjkgMS4yNWMuMjEuMjEuMjIuNTUgMCAuNzlNOCAxMy45MWw0LjE3LTQuMTlsMi4wNyAyLjA4bC00LjE2IDQuMkg4di0yLjA5TTEzIDJ2MmM0LjM5LjU0IDcuNSA0LjUzIDYuOTYgOC45MkE4LjAxNCA4LjAxNCAwIDAgMSAxMyAxOS44OHYyYzUuNS0uNiA5LjQ1LTUuNTQgOC44NS0xMS4wM0MyMS4zMyA2LjE5IDE3LjY2IDIuNSAxMyAybS0yIDBjLTEuOTYuMTgtMy44MS45NS01LjMzIDIuMkw3LjEgNS43NGMxLjEyLS45IDIuNDctMS40OCAzLjktMS42OHYtMk00LjI2IDUuNjdBOS44MSA5LjgxIDAgMCAwIDIuMDUgMTFoMmMuMTktMS40Mi43NS0yLjc3IDEuNjQtMy45TDQuMjYgNS42N00yLjA2IDEzYy4yIDEuOTYuOTcgMy44MSAyLjIxIDUuMzNsMS40Mi0xLjQzQTguMDAyIDguMDAyIDAgMCAxIDQuMDYgMTNoLTJtNSA1LjM3bC0xLjM5IDEuMzdBOS45OTQgOS45OTQgMCAwIDAgMTEgMjJ2LTJhOC4wMDIgOC4wMDIgMCAwIDEtMy45LTEuNjNoLS4wNFoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-19-markcomplete",
+									"operator": "=",
+									"answerBoolean": false
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://smartforms.csiro.au/ig/CodeSystem/QuestionnaireItemControlExtended",
+												"code": "context-display"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "group-19-complete",
+							"text": "Complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div title=\"Section completed\" xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"display: flex; flex-direction: row;\"><img width='24' height='24' src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMyZTdkMzIiIGQ9Ik0yMCAxMmE4IDggMCAwIDEtOCA4YTggOCAwIDAgMS04LThhOCA4IDAgMCAxIDgtOGMuNzYgMCAxLjUuMTEgMi4yLjMxbDEuNTctMS41N0E5LjgyMiA5LjgyMiAwIDAgMCAxMiAyQTEwIDEwIDAgMCAwIDIgMTJhMTAgMTAgMCAwIDAgMTAgMTBhMTAgMTAgMCAwIDAgMTAtMTBNNy45MSAxMC4wOEw2LjUgMTEuNUwxMSAxNkwyMSA2bC0xLjQxLTEuNDJMMTEgMTMuMTdsLTMuMDktMy4wOVoiLz48L3N2Zz4=' style=\"align-self: center;\"/></div></div>"
+									}
+								]
+							},
+							"type": "display",
+							"enableWhen": [
+								{
+									"question": "group-19-markcomplete",
+									"operator": "=",
+									"answerBoolean": true
+								}
+							]
+						},					
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-19-1",
+							"text": "Have there been any mobility changes over time?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Have there been any **mobility** changes over time?"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-19-2",
+							"text": "Has there been any functional decline over time?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Has there been any **functional decline** over time?"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-19-3",
+							"text": "Would you be surprised if the person were to die in the next 12 months?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "Would you be surprised if the person were to die in the next 12 months?"
+									}
+								]
+							},
+							"type": "choice",
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"linkId": "group-19-4",
+							"text": "If No, have you considered advanced care planning and palliative care, and discussed with the person, their family or carers?",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+										"valueMarkdown": "If **No**, have you considered **advanced care planning and palliative care**, and discussed with the person, their family or carers?"
+									}
+								]
+							},
+							"type": "choice",
+							"enableWhen": [
+								{
+									"question": "ce300ef0-f53f-4cdf-e209-9630fd6eeb38",
+									"operator": "=",
+									"answerCoding": {
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no"
+									}
+								}
+							],
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "7f062c98-0346-4fe1-9aa4-954e34680ac7",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "yes",
+										"display": "Yes"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "fcf79d68-a784-4998-e749-5afafc299294",
+										"system": "urn:uuid:714d5064-d2c6-4ca5-84e0-6d27d901aa8c",
+										"code": "no",
+										"display": "No"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "group-19-markcomplete",
+							"text": "Mark section as complete",
+							"_text": {
+								"extension": [
+									{
+										"url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+										"valueString": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><head><style type=\"text/css\">.alert { padding: 0.875rem; margin-bottom: 1rem; font-size: 0.875rem; color: #000000; border-radius: 0.5rem; background-color: #D5E3F7; font-weight: 700;}</style></head><body><div class=\"alert\">Mark section as complete</div></body></div>"
+									}
+								]
+							},
+							"type": "boolean",
+							"repeats": false
+						}
+					]
+				},
+				{
+					"linkId": "group-20-actionplan",
+					"text": "20. Action Plan",
+					"type": "group",
+					"item": [
+						{
+							"linkId": "group-20-actionplan-details",
+							"text": "Actions",
+							"type": "group",
+							"repeats": true,
+							"item": [
+								{
+									"linkId": "59b1900a-4f85-4a8c-b9cd-3fe2fd76f271",
+									"text": "Problem(s) Identified",
+									"type": "string"
+								},
+								{
+									"linkId": "59b1900a-4f85-4a8c-b9cd-3fe2fd76f272",
+									"text": "Action(s) to be Taken",
+									"type": "string"
+								},
+								{
+									"linkId": "59b1900a-4f85-4a8c-b9cd-3fe2fd76f273",
+									"text": "Medication Changes",
+									"type": "string"
+								},
+								{
+									"linkId": "59b1900a-4f85-4a8c-b9cd-3fe2fd76f273",
+									"text": "Action(s) by, Arranged by:",
+									"type": "string"
+								},
+								{
+									"linkId": "6ae641ad-95bb-4cdc-8910-5a52077e4924",
+									"text": "By when (Date)",
+									"type": "date"
+								},
+								{
+									"linkId": "18b9e159-2ed7-4047-82b7-deb2a171de45",
+									"text": "Actions completed & date",
+									"type": "date"
+								}
+							]
+						},
+						{
+							"linkId": "group-20-actionplan-comment",
+							"text": "Comments or notes about the consultation",
+							"type": "text"
+						},
+						{
+							"linkId": "group-20-actionplan-caseconference",
+							"text": "Details of case conference (including other professionals involved)",
+							"type": "text"
+						}
+					]
+				}
+			]
+		}
+	]
+}

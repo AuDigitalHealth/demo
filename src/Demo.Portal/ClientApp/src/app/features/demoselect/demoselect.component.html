@@ -1,0 +1,25 @@
+<h1 class="pca-page-heading">Questionnaire list</h1>
+
+<div class="pca-body-content-container" style="margin: 15px 4px 0px 4px">
+	<ng-container>
+		<p style="padding-top: 25px">Select a questionnaire:</p>
+		<mat-radio-group class="emr-radio-group" [(ngModel)]="selectedQuestionnaire">
+			<mat-radio-button
+				class="emr-radio-button"
+				*ngFor="let questionnaire of questionnaires"
+				[value]="questionnaire"
+				>{{ questionnaire.questionnaireName }}</mat-radio-button
+			>
+		</mat-radio-group>
+	</ng-container>
+
+	<button
+		mat-flat-button
+		color="primary"
+		type="button"
+		style="margin-bottom: 25px"
+		*ngIf="selectedQuestionnaire"
+		(click)="getDocument()">
+		Retrieve a Document
+	</button>
+</div>

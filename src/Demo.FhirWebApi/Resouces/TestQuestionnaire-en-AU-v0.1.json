@@ -1,0 +1,865 @@
+{
+	"resourceType": "Questionnaire",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2024-03-21T01:22:20.2265443+00:00",
+		"profile": [
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp",
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"
+		]
+	},
+	"language": "en-AU",	
+	"extension": [
+		{
+			"extension": [
+				{
+					"url": "name",
+					"valueCoding": {
+						"system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+						"code": "patient"
+					}
+				},
+				{
+					"url": "type",
+					"valueCode": "Patient"
+				},
+				{
+					"url": "description",
+					"valueString": "The patient that is to be used to pre-populate the form"
+				}
+			],
+			"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+		},
+		{
+			"extension": [
+				{
+					"url": "name",
+					"valueCoding": {
+						"system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+						"code": "user"
+					}
+				},
+				{
+					"url": "type",
+					"valueCode": "Practitioner"
+				},
+				{
+					"url": "description",
+					"valueString": "The practitioner user that is to be used to pre-populate the form"
+				}
+			],
+			"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+		},
+		{
+			"extension": [
+				{
+					"url": "name",
+					"valueCoding": {
+						"system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext",
+						"code": "encounter"
+					}
+				},
+				{
+					"url": "type",
+					"valueCode": "Encounter"
+				},
+				{
+					"url": "description",
+					"valueString": "The encounter that is to be used to pre-populate the form"
+				}
+			],
+			"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+		}
+	],	
+	"url": "https://digitalhealth.gov.au/ig/Questionnaire/TestQuestionnaire",
+	"version": "0.1",
+	"name": "TestQuestionnaire",
+	"title": "Test Questionnaire",
+	"status": "draft",
+	"experimental": true,
+	"subjectType": [
+		"Patient"
+	],
+	"date": "2024-02-01",
+	"publisher": "ADHA",
+	"contact": [
+		{
+			"name": "https://www.digitalhealth.gov.au/"
+		}
+	],
+	"description": "Annual Health Assessment for People with Intellectual Disability.",
+	"jurisdiction": [
+		{
+			"coding": [
+				{
+					"system": "urn:iso:std:iso:3166",
+					"code": "AU"
+				}
+			]
+		}
+	],	
+	"item": [
+		{
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "http://hl7.org/fhir/questionnaire-item-control",
+								"version": "1.0.0",
+								"code": "tab-container"
+							}
+						]
+					}
+				}
+			],
+			"linkId": "tab-container",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "group-title",
+					"text": "1. Test Questionnaire",
+					"_text": {
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+								"valueMarkdown": "## 1\\. Test Questionnaire"
+							}
+						]
+					},
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "group-visit-1",
+							"text": "Group Header",
+							"type": "group",
+							"required": false,
+							"item": [
+								{
+									"linkId": "group-summary",
+									"text": "Information Text Review the history provided in the Part 1 of the CHAPs document. Common health deficits for people with intellectual disability include: • unrecognised pain or infections • poor dental care • over-use and inadequate review of anti-psychotics/anti-convulsants The Chronic Disease Care Management items are: • GP Management Plan (item 721) • Team Care Arrangements (item 723) Please perform a COMPREHENSIVE REVIEW of your patient’s health: • full physical examination • screening areas often neglected • other tests you feel are indicated, for example, a urine analysis. Please record your findings on the following pages. The last page of this book has syndrome specific information for you to keep.",
+									"_text": {
+										"extension": [
+											{
+												"url": "http://hl7.org/fhir/StructureDefinition/rendering-markdown",
+												"valueMarkdown": "### Information Text\n\n**Review the history provided in the Part 1 of the CHAPs document.**  \n**Common health deficits for people with intellectual disability include:**  \n• unrecognised pain or infections  \n• poor dental care  \n• over-use and inadequate review of anti-psychotics/anti-convulsants\n\n**The Chronic Disease Care Management items are:**  \n• GP Management Plan (item 721)  \n• Team Care Arrangements (item 723)  \n**Please perform a COMPREHENSIVE REVIEW of your patient’s health:**  \n• full physical examination  \n• screening areas often neglected  \n• other tests you feel are indicated, for example, a urine analysis.  \n**Please record your findings on the following pages.**  \n_The last page of this book has syndrome specific information for you to keep._"
+											}
+										]
+									},
+									"type": "display",
+									"required": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "group-visit",
+					"text": "2. Text answer",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+									"valueExpression": {
+										"language": "text/fhirpath",
+										"expression": "%patient.identifier.where(type.coding.exists(system='http://terminology.hl7.org/CodeSystem/v2-0203' and code='MR')).value"
+									}
+								}
+							],
+							"linkId": "group-visit-1-1",
+							"text": "Text Answer",
+							"type": "string",
+							"required": false
+						},
+						{
+							"linkId": "f48e9dd9-d67d-48d5-8a92-1b4aeb87a245",
+							"type": "string",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "with sublabel"
+								}
+							],
+							"text": "Text Answer - with sublabel - Mandatory",
+							"required": true
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+									"valueExpression": {
+										"language": "text/fhirpath",
+										"expression": "%patient.name.where(use='official').select(given[0])"
+									}
+								}
+							],
+							"linkId": "group-visit-1-2",
+							"text": "Text Answer Multiline",
+							"type": "text",
+							"repeats": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+									"valueExpression": {
+										"language": "text/fhirpath",
+										"expression": "%patient.name.where(use='official').select(given[0])"
+									}
+								},
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "with sublabel"
+								}
+							],
+							"linkId": "f45fe394-203a-4ebb-8ee7-c3d5a0c30ac3",
+							"text": "Text Answer Multiline - with sublabel - Mandatory",
+							"type": "text",
+							"repeats": false,
+							"required": true
+						}
+					]
+				},
+				{
+					"linkId": "b95e00e5-58e9-4bbd-8f07-c02dd2156f7b",
+					"text": "3. Confirmation",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "447aca54-a418-44a5-c26b-6cb47b00d38e",
+							"type": "boolean",
+							"text": "Confirmation",
+							"required": false
+						},
+						{
+							"linkId": "e060e458-557b-439f-d3e8-cdb4ba61279f",
+							"type": "boolean",
+							"text": "Confirmation - Mandatory",
+							"required": true
+						}
+					]
+				},
+				{
+					"linkId": "d9ae6f95-9779-4429-9736-4fa4b674dd8a",
+					"text": "4. Choice",
+					"type": "group",
+					"required": false,
+					"item": [
+						{
+							"linkId": "fc62d195-3dca-4920-a9c7-7a80147e058d",
+							"type": "choice",
+							"text": "Choice - Radio buttons",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "sublabel"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "radio-button"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "bb070a9d-084b-4d09-c1c5-ce7c19abb180",
+										"code": "male",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "b9c86b8b-ab28-4378-9630-e08129d35ac4",
+										"code": "female",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "e937a4bc-468e-4c8a-8a24-d0a80175be7c",
+										"code": "other",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Other"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "807058cb-8070-4875-8296-12980b9296a4",
+							"type": "choice",
+							"text": "Choice - Radio buttons - Mandatory",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "sublabel"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "radio-button"
+											}
+										]
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+									"valueCode": "horizontal"
+								}
+							],
+							"required": true,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "bb070a9d-084b-4d09-c1c5-ce7c19abb180",
+										"code": "male",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "b9c86b8b-ab28-4378-9630-e08129d35ac4",
+										"code": "female",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "e937a4bc-468e-4c8a-8a24-d0a80175be7c",
+										"code": "other",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Other"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "9e20ab92-e072-4b84-efec-a44ec653f00e",
+							"type": "choice",
+							"text": "Choice - Dropdown",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "sublabel"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "drop-down"
+											}
+										]
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "bb070a9d-084b-4d09-c1c5-ce7c19abb180",
+										"code": "male",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "b9c86b8b-ab28-4378-9630-e08129d35ac4",
+										"code": "female",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "e937a4bc-468e-4c8a-8a24-d0a80175be7c",
+										"code": "other",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Other"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "8097152b-c993-4145-8caa-df0505f7b69a",
+							"type": "choice",
+							"text": "Choice - Dropdown - Mandatory",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "sublabel"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "drop-down"
+											}
+										]
+									}
+								}
+							],
+							"required": true,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "bb070a9d-084b-4d09-c1c5-ce7c19abb180",
+										"code": "male",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "b9c86b8b-ab28-4378-9630-e08129d35ac4",
+										"code": "female",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "e937a4bc-468e-4c8a-8a24-d0a80175be7c",
+										"code": "other",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Other"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "c9c9eecb-4e9b-43ce-863f-cc365c3c217a",
+							"type": "choice",
+							"text": "Choice - Checkbox (multi)",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "sublabel"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								}
+							],
+							"required": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "bb070a9d-084b-4d09-c1c5-ce7c19abb180",
+										"code": "male",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "b9c86b8b-ab28-4378-9630-e08129d35ac4",
+										"code": "female",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "e937a4bc-468e-4c8a-8a24-d0a80175be7c",
+										"code": "other",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Other"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "17c4b120-9c09-4e20-e6d8-8afb474da6c9",
+							"type": "choice",
+							"text": "Choice - Checkbox (multi) - Mandatory",
+							"extension": [
+								{
+									"url": "http://helsenorge.no/fhir/StructureDefinition/sdf-sublabel",
+									"valueMarkdown": "sublabel"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "check-box"
+											}
+										]
+									}
+								}
+							],
+							"required": true,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "bb070a9d-084b-4d09-c1c5-ce7c19abb180",
+										"code": "male",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "b9c86b8b-ab28-4378-9630-e08129d35ac4",
+										"code": "female",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "e937a4bc-468e-4c8a-8a24-d0a80175be7c",
+										"code": "other",
+										"system": "urn:uuid:635b4ac0-6be9-49ac-898d-c07a760f94f6",
+										"display": "Other"
+									}
+								}
+							]
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+									"valueExpression": {
+										"language": "text/fhirpath",
+										"expression": "%patient.gender"
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+												"code": "drop-down"
+											}
+										]
+									}
+								}
+							],
+							"linkId": "abb60c95-5916-4430-837f-30af5cb82f4b",
+							"text": "Administrative gender (mine)",
+							"type": "choice",
+							"repeats": false,
+							"answerOption": [
+								{
+									"valueCoding": {
+										"id": "16ecfa1b-ea57-405d-84b6-70f6421a574e",
+										"code": "male",
+										"system": "urn:uuid:a52f4dd9-d994-4aac-b4eb-ce0f838d5949",
+										"display": "Male"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "52227646-834e-45ad-eca8-d944856f18aa",
+										"code": "female",
+										"system": "urn:uuid:a52f4dd9-d994-4aac-b4eb-ce0f838d5949",
+										"display": "Female"
+									}
+								},
+								{
+									"valueCoding": {
+										"id": "5074ced7-bf7a-4dba-8a2d-f1287e1eea79",
+										"code": "other",
+										"system": "urn:uuid:a52f4dd9-d994-4aac-b4eb-ce0f838d5949",
+										"display": "Other"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"linkId": "group-1-check",
+					"text": "5. Date",
+					"type": "group",
+					"repeats": false,
+					"item": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+									"valueExpression": {
+										"language": "text/fhirpath",
+										"expression": "%patient.birthDate"
+									}
+								}
+							],
+							"linkId": "273530ca-18a5-4659-825f-23d3135f2aa0",
+							"text": "Date of Birth",
+							"type": "date",
+							"required": false
+						},
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+									"valueExpression": {
+										"language": "text/fhirpath",
+										"expression": "%patient.birthDate"
+									}
+								}
+							],
+							"linkId": "d7c6c729-a615-4e7e-e6aa-3b3ef8b1a7f2",
+							"text": "Date of Birth - Mandatory",
+							"type": "date",
+							"required": true
+						}
+					]
+				},
+				{
+					"linkId": "e09997fd-f39d-4a68-e4f9-5a028df5d49b",
+					"text": "6. Time",
+					"type": "group",
+					"repeats": false,
+					"item": [
+						{
+							"linkId": "f19d88d7-ee60-4313-839f-bf228d5c6b51",
+							"type": "time",
+							"text": "Time",
+							"required": false
+						},
+						{
+							"linkId": "53a48fb0-e728-4d25-8f8c-fe86e12bdbfc",
+							"type": "time",
+							"text": "Time - Mandatory",
+							"required": true
+						}
+					]
+				},
+				{
+					"linkId": "7d7ed8c3-fd09-4b70-816d-c8cba06f4764",
+					"text": "7. Number",
+					"type": "group",
+					"repeats": false,
+					"item": [
+						{
+							"linkId": "a94e5c18-5645-4d91-8661-9ff1f33bc0b9",
+							"type": "integer",
+							"text": "Number Range 0-10",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 10
+								}
+							],
+							"required": false
+						},
+						{
+							"linkId": "a7277746-1345-4439-b159-6ed35931de80",
+							"type": "integer",
+							"text": "Number Range 0-10 - Mandatory",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 10
+								}
+							],
+							"required": true
+						},
+						{
+							"linkId": "6c450646-df4b-4791-dfab-3446e071d460",
+							"type": "decimal",
+							"text": "Number Range 0.00-3.00",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 3
+								}
+							]
+						},
+						{
+							"linkId": "5b47f8ab-b866-4dad-84bf-db35604819b2",
+							"type": "decimal",
+							"text": "Number Range 0.00-3.00 - Mandatory",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 3
+								}
+							],
+							"required": true
+						}
+					]
+				},
+				{
+					"linkId": "89909109-e46e-4f59-a27c-902601458e91",
+					"text": "8. Quantity",
+					"type": "group",
+					"repeats": false,
+					"item": [
+						{
+							"linkId": "bbc121d6-49ac-4436-8f08-3aede8d85ba3",
+							"type": "quantity",
+							"text": "Quantity Number - no unit",
+							"required": false
+						},
+						{
+							"linkId": "da921334-308e-4046-8135-9e12c7b947de",
+							"type": "quantity",
+							"text": "Quantity Number 0.00-300.00 - no unit - Mandatory",
+							"required": true,
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 300
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								}
+							]
+						},
+						{
+							"linkId": "3d300e12-4a62-47d1-8870-cdc53e2e4135",
+							"type": "quantity",
+							"text": "Quantity Number 0.00-300.00 - cm",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 300
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+									"valueCoding": {
+										"code": "cm",
+										"display": "centimeter",
+										"system": "http://unitsofmeasure.org"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "8e884a19-efb4-43c8-81f5-1b5f2c803ac0",
+							"type": "quantity",
+							"text": "Quantity Number 0.00-300.00 - kg",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 2
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 300
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+									"valueCoding": {
+										"code": "kg",
+										"display": "kilo",
+										"system": "http://unitsofmeasure.org"
+									}
+								}
+							]
+						},
+						{
+							"linkId": "a1a50fea-4bbf-4a65-852c-d5416ffe4283",
+							"type": "quantity",
+							"text": "Quantity Number - 1900-2099",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+									"valueCoding": {
+										"code": "a",
+										"display": "year",
+										"system": "http://unitsofmeasure.org"
+									}
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 1900
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 2099
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,117 @@
+/* --------------------------------------------
+    OVERRIDE STYLES FOR ANGULAR MATERIAL
+   --------------------------------------------*/
+
+@import '../styles/variables';
+
+input:read-only {
+	color: #aaaaaa !important;
+	font-style: italic !important;
+}
+
+/* TODO(mdc-migration): The following rule targets internal classes of checkbox that may no longer apply for the MDC version.*/
+.mat-checkbox-label {
+	font-family: inherit;
+}
+
+.mat-mdc-checkbox {
+	font-family: inherit;
+}
+
+.mat-drawer-container {
+	background-color: white;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-mdc-tooltip {
+	font-size: 12px !important;
+}
+
+/* TODO(mdc-migration): The following rule targets internal classes of checkbox that may no longer apply for the MDC version.*/
+.mat-checkbox-inner-container {
+	margin: 4px 8px auto 0 !important;
+}
+
+.mat-expansion-panel-content {
+	font-family: inherit;
+}
+
+.mat-expansion-panel-body {
+	padding: 0px !important;
+	border-top: solid 1px $pca-grey;
+}
+
+.mat-mdc-tab-group {
+	font-family: inherit;
+
+	.mat-mdc-tab-header {
+		border-bottom: none;
+		/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+		/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+		/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+		/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+		/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+		.mat-tab-label-container {
+			/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+			/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+			/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+			/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+			.mat-tab-labels {
+				/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+				/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+				/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+				.mat-tab-label {
+					background-color: $pca-grey;
+					color: #000;
+					border-left: solid 1px white;
+
+					&:first-of-type {
+						border-left: solid 1px $pca-grey;
+					}
+
+					&:last-of-type {
+						border-right: solid 1px $pca-grey;
+					}
+					/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+					.mat-tab-label-content {
+						padding-top: 0;
+						transition: padding-top 0.4s;
+					}
+					/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+					/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+					&.mat-tab-label-active {
+						opacity: 1;
+						background-color: white;
+						color: $pca-background-colour;
+						/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+						.mat-tab-label-content {
+							padding-top: 0.6rem;
+						}
+					}
+				}
+			}
+
+			.mat-ink-bar {
+				height: 3px;
+				bottom: auto;
+				top: 0;
+				background-color: $pca-background-colour;
+			}
+		}
+	}
+	/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+	/* TODO(mdc-migration): The following rule targets internal classes of tabs that may no longer apply for the MDC version.*/
+	.mat-tab-body-wrapper {
+		border: solid 1px $pca-grey;
+		margin-top: -1px; // <- so that the tabs hide a portion of the top border
+
+		.mat-mdc-tab-body {
+			padding: 25px;
+		}
+	}
+}
+
+.mat-mdc-card {
+	font-family: inherit;
+	font-size: 16px;
+}
