@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm start",
-    "start1": "ng serve --publicHost=0.0.0.0:0",
+    "start1": "npm start",
+    "start": "ng serve --publicHost=0.0.0.0:0",
     "dev": "ng serve --open --configuration=development",
     "build": "ng build",
     "test": "ng test",
